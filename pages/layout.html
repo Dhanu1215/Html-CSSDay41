@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="ut f-8">
+    <title>CodePen - Demo flexbox</title>
+    <style>
+        body {
+            padding: 2em;
+        }
+        .headerContainer {
+            display: flex;
+            flex-flow: column wrap;
+            align-content: flex-start;
+            background-color:coral;
+            font-weight: bold;
+            padding: 10px;
+            color: white;
+        }
+        .footerContainer {
+            display: flex;
+            flex-flow: column wrap;
+            align-content:flex-start;
+            background-color:darkorange;
+            font-weight: bold;
+            padding: 10px;
+            color:white;
+        }
+        .mainContainer {
+            display: flex;
+            flex-flow: row wrap;
+            align-content: center;
+            font-weight: bold;
+        }
+        .mainContentItem {
+            text-align: left;
+            background-color:white;
+        }
+        article {
+            padding: 10px;
+            margin: 10px;
+            background-color:lawngreen;
+        }
+        .sideBarLeftItem{background-color:orchid}
+        .sideBarRigthItem{background-color:khaki}
+        .sideBarItem {flex: 1 0 0; border:0px solid black;text-align: center;}
+        .mainContentItem {flex: 3 0px;}
+        .sideBarLeftItem {order: 2;}
+        .sideBarRigthItem{order: 2;}
+        .mainContentItem{order: 1;}
+        
+    </style>
+    <body>
+        <header class = "headerContainer"><h1>HEADER - Sample flexbox Example</h1></header>
+        <div class="mainContainer">
+            <section class="mainContentItem">
+            <article>
+                <h2>First artical</h2>
+                <p>
+                    Tacos actually microdosing, pour-over semiotics banjo chiccharones retro fanny.
+                </p>
+            </article>
+            <article>
+                <h2>Second artical</h2>
+                <p>
+                    Tacos actually microdosing, pour-over semiotics banjo chiccharones retro fanny.
+                </p>
+            </article>
+            <article>
+                <h2>Third artical</h2>
+                <p>
+                    Tacos actually microdosing, pour-over semiotics banjo chiccharones retro fanny.
+                </p>
+            </article>
+        </section>
+        <sideBar class="sideBarItem sideBarLeftItem"><div class="center"><p>Left Sied Bar</p></div></sideBar>
+        <sideBar class="sideBarItem sideBarRigthItem"><div class="center"><p>Right Side Bar</p></div></sideBar>
+        </div>
+        <footer class="footerContainer">Footer</footer>
+    </body>
+</head>
+</html>
+
+
